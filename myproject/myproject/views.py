@@ -1,7 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse('hello, this is the index view')
+
+def home(request):
+    return render(request,'home.html')
+
 
 def about(request):
-    return HttpResponse("this is the about")
+    return render(request,'about.html')
