@@ -1,8 +1,10 @@
 h1{
- color:#333;   
+ color:blue;
 }
 p{
     line-height:1.6;
+    color: bisque;
+
 }
 
 a{
