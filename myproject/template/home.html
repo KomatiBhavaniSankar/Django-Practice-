@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'layout.html' %}
 
-    <title>Home</title>
- <script src="{% static 'script/home.js' %}" defer></script>
-    <link rel="stylesheet" href="{% static 'styles/index.css' %}" >
-</head>
-<body>
-    <h1>home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam debitis at reprehenderit nostrum qui, dignissimos repellendus assumenda dolorum quaerat similique distinctio cupiditate aut eum doloribus ipsa quam inventore exercitationem praesentium?</p>
-</body>
-</html>
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>hello, djanago</h1>
+<a href="/about">go to About </a>
+</div>
+{% endblock %}
+
