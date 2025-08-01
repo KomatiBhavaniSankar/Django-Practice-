@@ -23,4 +23,5 @@ urlpatterns = [
  path('',views.home),
  path('about/',views.about),
  path('contact/', include('myapp.urls')),
+
 ]
